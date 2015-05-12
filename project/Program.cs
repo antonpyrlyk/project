@@ -18,7 +18,7 @@ namespace project
             switch (args[0])
             {
                 case "sum":
-                    if (args.Length > 3)
+                    if (args.Length < 3)
                     {
                         Console.Write("Error, sum called with too few parameters");
                         return;
@@ -26,7 +26,7 @@ namespace project
                     sum(args);
                     break;
                 case "dump":
-                    if (args.Length > 2)
+                    if (args.Length < 2)
                     {
                         Console.Write("Error, enter the filename");
                         return;
@@ -34,7 +34,7 @@ namespace project
                     break;
                 case "concat":
                     Console.Write(concat(args));
-                    if (args.Length > 3)
+                    if (args.Length < 3)
                     {
                         Console.Write("Error, concat called with too few parameters");
                         return;
