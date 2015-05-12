@@ -110,7 +110,10 @@ namespace project
         static string concat(string[] args)
         {
             string res = "";
-            // TODO
+            for (int i = 1; i < args.Length; i++)
+            {
+                res += args[i];
+            }
             return res;
         }
 
