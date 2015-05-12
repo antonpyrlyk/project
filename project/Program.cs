@@ -31,6 +31,15 @@ namespace project
                         Console.Write("Error, enter the filename");
                         return;
                     }
+                    else if (args.Length > 2)
+                    {
+                        Console.Write("Error, dump called with too many parameters");
+                        return;
+                    }
+                    else
+                    {
+
+                    }
                     break;
                 case "concat":
                     Console.Write(concat(args));
