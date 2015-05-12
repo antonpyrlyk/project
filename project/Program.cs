@@ -18,12 +18,13 @@ namespace project
             switch (args[0])
             {
                 case "sum":
+                    Console.Write(sum(args));
+
                     if (args.Length < 3)
                     {
                         Console.Write("Error, sum called with too few parameters");
                         return;
                     }
-                    sum(args);
                     break;
                 case "dump":
                     if (args.Length < 2)
@@ -108,7 +109,12 @@ namespace project
 
         static double sum(string[] args)
         {
-            // TODO
+            double res = 0.0;
+            for (int i = 1; i < args.Length; i++)
+            {
+                res += double.Parse(args[i]);
+            }
+            return res;
             return 0.0;
         }
 
