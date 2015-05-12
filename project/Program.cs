@@ -134,7 +134,14 @@ namespace project
         static string remove(string[] args)
         {
             string res = "";
-            // TODO
+            Char c = args[2][0];
+            for (int i = 0; i < args[1].Length; i++)
+            {
+                if (args[1][i] != c)
+                {
+                    res += args[1][i];
+                }
+            }
             return res;
         }
     }
