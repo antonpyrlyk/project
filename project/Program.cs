@@ -72,7 +72,7 @@ namespace project
                     }
                     else
                     {
-
+                    	string result=	insert(args[1],args[2],args[3]);
                     }
                     break;
                 case "split":
@@ -101,6 +101,10 @@ namespace project
         {
             // TODO
             return 0.0;
+        }
+
+        static string insert(string str,string cons,string newcons){
+            return str.Substring(0, str.IndexOf(cons)+cons.Length) + newcons + str.Substring(str.IndexOf(cons) + cons.Length);
         }
 
         static string concat(string[] args)
