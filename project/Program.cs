@@ -98,7 +98,7 @@ namespace project
                     }
                     else
                     {
-                        Console.Write(split(args)); 
+
                     }
                     break;
                 default:
@@ -136,11 +136,6 @@ namespace project
             string res = "";
             // TODO
             return res;
-        }
-
-        static string split(string[] args)
-        {
-            return args[1].Replace(args[2], " "); 
         }
     }
 }
