@@ -115,7 +115,6 @@ namespace project
                 res += double.Parse(args[i]);
             }
             return res;
-            return 0.0;
         }
 
         static string insert(string str,string cons,string newcons){
