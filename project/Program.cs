@@ -154,7 +154,7 @@ namespace project
             }
             else
             {
-                System.Console.WriteLine("Contents of info.txt = ");
+                System.Console.WriteLine("Contents of file= ");
                 foreach (string line in lines)
                 {
                     Console.WriteLine("\t" + line);
