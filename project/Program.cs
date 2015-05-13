@@ -142,5 +142,24 @@ namespace project
         {
             return args[1].Replace(args[2], " ");
         }
+
+        static void dump(string[] args) {
+            var path = args[1];
+
+            string[] lines = System.IO.File.ReadAllLines(path);
+
+            if (lines.Length == 0)
+            {
+                Console.WriteLine("File is empty");
+            }
+            else
+            {
+                System.Console.WriteLine("Contents of info.txt = ");
+                foreach (string line in lines)
+                {
+                    Console.WriteLine("\t" + line);
+                }
+            }
+         }
     }
 }
